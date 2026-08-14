@@ -82,9 +82,6 @@ public final class Song {
     //            ระวัง: ต้องรับ Object ไม่ใช่ Song ไม่งั้นเป็น overload ไม่ใช่ override!
     @Override
     public boolean equals(Object o){
-        if(title.equals(o)) return true;
-        if(artist.equals(o)) return true;
-        if(tags.equals(o)) return true;
         if (!(o instanceof Song))
             return false;
         Song other = (Song) o ;
